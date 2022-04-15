@@ -67,7 +67,7 @@ def deploy_mocks(decimals=DECIMALS, initial_value=INITIAL_VALUE):
         decimals, initial_value, {"from": account}
     )
     VRFCoordinatorV2Mock.deploy(10, 2, {"from": account})
-    link_token = LinkToken.deploy({"from": account})
+    LinkToken.deploy({"from": account})
     print("Deployed mocks: Price feed, coordinator and LinkToken")
 
 def get_subscription_id():
